@@ -10,3 +10,25 @@ Write a series of conditional statements that:
 
 */
 
+const musicians = 7;
+
+if (musicians <= 0) {
+  console.log("note a group");
+} else {
+  switch (musicians) {
+    case 1:
+      console.log("solo");
+      break;
+    case 2:
+      console.log("duet");
+      break;
+    case 3:
+      console.log("trio");
+      break;
+    case 4:
+      console.log("quartet");
+      break;
+    default:
+      console.log("this is a large group");
+  }
+}
