@@ -5,12 +5,13 @@ laugh(3);
 Returns: hahaha!
 */
 
-let lol = "";
-
 const laugh = function (times) {
+  let lol = "";
+
   for (let i = 0; i < times; i++) {
     lol = lol + "ha";
   }
+
   return lol;
 };
 
