@@ -4,3 +4,11 @@ Write a named function expression that stores the function in a variable called 
 cry();
 Returns: boohoo!
 */
+
+const cry = function crying() {
+  return "boohoo!";
+};
+
+const output = cry();
+
+console.log(output);
