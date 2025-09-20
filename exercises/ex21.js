@@ -6,3 +6,11 @@ TIP: The 1st element of any array has an index of 0.
 
 Afterwards, print out the prices array to the console.
 */
+
+const prices = [1.23, 48.11, 90.11, 8.5, 9.99, 1.0, 1.1, 67.0];
+
+prices[0] = 1.55;
+prices[2] = 80.11;
+prices[6] = 3.1;
+
+console.log(prices);
