@@ -10,7 +10,7 @@ lastIndexOf([ 0, 1, 4, 1, 2 ], 1);	            3
 lastIndexOf([ 0, 1, 4, 1, 2 ], 2);	            4
 lastIndexOf([ 0, 1, 4, 1, 2 ], 3);	            -1
 lastIndexOf([ 5, 5, 5 ], 5);	                2
-lastIndexOf([], 3);	                            -1
+lastIndexOf([], 3);	                             -1
 
 You may paste the following code after your function definition to help you verify it works correctly:
 console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 1), "=?", 3);
@@ -20,3 +20,23 @@ console.log(lastIndexOf([ 5, 5, 5 ], 5), "=?", 2);
 console.log(lastIndexOf([], 3), "=?", -1);
 
 */
+
+const lastIndexOf = function (array, lastLetter) {
+  const length = array.length;
+  let result;
+
+  for (let i = 0; i < length; i++) {
+    if (lastLetter === array[i]) {
+      result = i;
+    }
+  }
+
+  if (result) {
+    return result;
+  } else {
+    return -1;
+  }
+};
+
+const test = lastIndexOf([0, 1, 4, 1, 2], 3);
+console.log(test);
